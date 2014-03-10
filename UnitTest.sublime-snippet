@@ -1,0 +1,9 @@
+<snippet>
+  <tabTrigger>test</tabTrigger>
+  <scope>source.ruby</scope>
+  <content><![CDATA[
+test "${1:should...}" do
+  flunk('Not yet implemented.')
+end
+]]></content>
+</snippet>

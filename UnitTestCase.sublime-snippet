@@ -1,0 +1,14 @@
+<snippet>
+  <tabTrigger>unittest</tabTrigger>
+  <scope>source.ruby</scope>
+  <content><![CDATA[
+require 'test_helper'
+include ActionDispatch::TestProcess
+
+class ${1:ClassName} < ActiveSupport::TestCase
+  test "${2:should...}" do
+    flunk('Not yet implemented.')
+  end
+end
+]]></content>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+  <tabTrigger>functest</tabTrigger>
+  <scope>source.ruby</scope>
+  <content><![CDATA[
+class ${1:ClassName} < ActionController::TestCase
+  def setup
+    @request.env["devise.mapping"] = Devise.mappings[:user]
+    @current_user = users(:john_doe)
+    sign_in(@current_user)
+  end
+
+  test "${2:should...}" do
+    flunk('Not yet implemented.')
+  end
+end
+]]></content>
+</snippet>
